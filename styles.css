@@ -43,10 +43,11 @@ html *
 
 .menus a {
     color: white;
-    font-size: 0.9em;
+    font-size: 0.8em;
     justify-content: center;
     
 }
+
 
 @media only screen and (min-width: 768px) {
     #head {
@@ -56,11 +57,13 @@ html *
     .menus {
         flex-direction: row;
         grid-gap: 1.5em;
+        font-size: 1.2em;
   }
 }
 
 h2 { 
-    font-size: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
 }
 
 #bigsections{
@@ -72,14 +75,20 @@ h2 {
 .eachsection{
     min-height: 200px;
     text-align: center;
+    width: 100%;
+    
 }
 
 .eachsection h2{
     padding-top:5px;
 }
 
+
+
 #gamesection{
-    background-color: aqua;
+    /* background-color: aqua; */
+    background-image: url('images/gameBackground.jpg');
+    color: white;
 }
 
 #animationsection{
@@ -107,6 +116,31 @@ h2 {
         
     }
 }
+
+.aroundvideos{
+    padding-right: 20px;
+    /* padding-left: 20px; */
+}
+
+.gamesanimationsleft {
+    justify-content:center;
+    display: flex;
+    flex-wrap:wrap;
+} 
+
+.gamesanimationsright {
+    justify-content:center;
+    display: flex;
+    flex-wrap:wrap-reverse;
+} 
+
+.gameanidescription{
+    max-width: 250px;
+    max-height: 200px;
+    min-width: 320px;
+}
+
+
 
 /* change to 1em 70% 15% 
 At 375x667* change font to 0.5em;
