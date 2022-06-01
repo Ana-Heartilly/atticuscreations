@@ -1,185 +1,249 @@
-html *
-{
-    font-family: 'Space Mono', monospace;
+@font-face {
+    font-family: 'MinecraftReg';
+      src: url('./fonts/MinecrafterReg.woff2') format('woff2'), 
+           url('./fonts/MinecrafterReg.woff') format('woff'),
+           url('./fonts/MinecrafterReg.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'MinecraftEve';
+      src: url('./fonts/Minecraft-Evenings.woff2') format('woff2'), 
+           url('./fonts/Minecraft-Evenings.woff') format('woff'),
+           url('./fonts/Minecraft-Evenings.ttf') format('truetype');
+  }
+
+body{
+    font-family: "Space Mono", monospace;
+}
+p {
+  font-size: 1.2rem;
 }
 
-#bannerheadcontainer{
-    display:flex;
-
+a {
+    text-decoration: none;
+}
+#bannerheadcontainer {
+  display: flex;
 }
 
 #head {
-    color:rgb(209, 219, 230);
-    justify-content: center;
-    background-image: url('images/blue-background.jpg');
-    display: inline-flex;
-    width: 70%;
-    align-items: center;
-    font-size: 0.5em;
-    text-align: center;
+  color: rgb(201, 209, 218);
+  justify-content: center;
+  background-image: url("images/blue-background.jpg");
+  display: inline-flex;
+  width: 70%;
+  align-items: center;
+  font-size: 0.7rem;
+  text-align: center;
+  font-family: MinecraftEve;
 }
 
 .topbanners {
-    width: 15%;
-    display: inline-flex;
-    justify-content: center;
+  width: 15%;
+  display: inline-flex;
+  justify-content: center;
 }
 
-.topbanners img{
-    width: 100%;
+.topbanners img {
+  width: 100%;
 }
 
 .menus {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black; 
-    height: auto;
-    font-family: 'Space Mono', monospace;
-    grid-gap:0.4em; 
-    padding: 1em 4em 1em 4em;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: auto;
+  font-family: "Space Mono", monospace;
+  grid-gap: 0.4em;
+  padding: 1em 4em 1em 4em;
+  flex-direction: column;
 }
 
 .menus a {
-    color: white;
-    font-size: 0.8em;
-    justify-content: center;
-    
+  color: white;
+  font-size: 0.9em;
+  justify-content: center;
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0;
+}
+
+#bigsections {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.eachsection {
+  min-height: 250px;
+  text-align: center;
+  width: 100%;
+}
+
+.eachsection h2 {
+  padding-top: 5px;
+}
+
+#gamesection {
+  background-image: url("images/gameBackground.jpg");
+  color: white;
+  background-size: cover;
+}
+
+#animationsection {
+  background-image: url("images/outerspacepic.png");
+  background-size: cover;
+  color: white;
+}
+
+#booksection {
+  background-image: url("images/Books-Background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#reviewsection {
+  background-image: url("images/stars.gif");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+.foot {
+  font-size: 0.7rem;
+  text-align: center;
 }
 
 
-@media only screen and (min-width: 768px) {
-    #head {
-        font-size: 1.2em;
-    
-  }
-    .menus {
-        flex-direction: row;
-        grid-gap: 1.5em;
-        font-size: 1.2em;
-  }
-}
-
-h2 { 
-    font-size: 1.3rem;
-    text-align: center;
-}
-
-#bigsections{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.eachsection{
-    min-height: 200px;
-    text-align: center;
-    width: 100%;
-    
-}
-
-.eachsection h2{
-    padding-top:5px;
-}
-
-
-
-#gamesection{
-    background-image: url('images/gameBackground.jpg');
-    color: white;
-    background-size: cover;
-}
-
-#animationsection{
-    background-image: url('images/outerspacepic.png');
-    background-size: cover;
-    color:white;
-}
-
-#booksection{
-    background-image: url('images/Books-Background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#reviewsection{
-    background-image: url('images/stars.gif');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    color:black;
-}
-
-.foot{
-    font-size: 0.6rem;
-    text-align: center;
-}
-
-@media only screen and (min-width: 768px) {
-    #bigsections {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 5px 5px;
-        
-    }
-}
-
-.aroundvideos{
-    padding-right: 20px;
-    /* padding-left: 20px; */
-}
 
 .gamesanimationsleft {
-    justify-content:center;
-    display: flex;
-    flex-wrap:wrap;
-} 
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .gamesanimationsright {
-    justify-content:center;
-    display: flex;
-    flex-wrap:wrap-reverse;
-} 
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
 
 .animadescription {
-    max-width: 250px;
-    min-width: 320px;
+  /* max-width: 250px;
+  min-width: 320px; */
+  width: 80%;
 }
 
 .gamedescription {
-    max-width: 250px;
-    max-height: 200px;
-    min-width: 320px;
+  max-width: 250px;
+  max-height: 200px;
+  min-width: 320px;
 }
 
-
-@media only screen and (min-width: 768px) {
-    .gamedescription {
-        padding-top: 25px;
-        padding-left: 5px;
-    }
+.aroundvideos {
+    width: 80%;
+    height:auto;
 }
 
 #aboutme {
-    display:flex;
-    justify-content: center;
-    width:85%;
-    margin: auto;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  margin: auto;
+  flex-wrap: wrap;
 }
 
-@media only screen and (min-width: 768px) {
-    #aboutme {
-        flex-wrap: nowrap;
-        width:60%;
-    }
-}
-
-.aroundimage{
+.aroundimage {
     padding-right: 20px;
     padding-top: 25px;
+  }
+  
+@media only screen and (min-width: 768px) {
+  #aboutme {
+    flex-wrap: nowrap;
+    width: 60%;
+  }
+  .gamedescription {
+    padding-top: 25px;
+    padding-left: 5px;
+  }
+  #bigsections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 5px;
+  }
+  .eachsection {
+    min-height: 300px;
+  }
+
+  #head {
+    font-size: 1.2em;
+  }
+  .menus {
+    flex-direction: row;
+    grid-gap: 1.5em;
+    font-size: 1.2em;
+  }
+
+  .menus a {
+    font-size: 1.1rem;
+  }
+
+  h2 {
+    font-size: 1.9rem;
+  }
+
+  .gamesanimationsleft {
+    width: 90%;
+    margin: auto;
+    grid-gap: 40px;
+  }
+
+  .gamesanimationsright {
+    width: 90%;
+    margin: auto;
+    grid-gap: 40px;
+  }
+
+  video.aroundvideos {
+    width: calc(50% - 20px);
+    height: auto;
+  }
+
+  .animadescription {
+    width: calc(50% - 20px);
+    height: auto;
+    min-width:inherit;
+    max-width: inherit;
+  }
 }
 
 
-/* change to 1em 70% 15% 
-At 375x667* change font to 0.5em;
+
+/* 
+.gamesanimationsleft {
+    width: 90%;
+    margin: auto;
+    grid-gap: 40px;
+}
+
+.gamesanimationsright {
+    width: 90%;
+    margin: auto;
+    grid-gap: 40px;
+}
+
+video.aroundvideos {
+    width: calc(50% - 20px);
+    height: auto;
+}
+
+.animadescription {
+    width: calc(50% - 20px);
+    height: auto;
+}*/
