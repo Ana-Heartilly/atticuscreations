@@ -16,6 +16,7 @@ body{
 }
 p {
   font-size: 1.2rem;
+  margin-top: 0px;
 }
 
 a {
@@ -32,10 +33,22 @@ a {
   display: inline-flex;
   width: 70%;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   text-align: center;
   font-family: MinecraftEve;
 }
+
+header a {
+  color: rgb(229, 234, 239);
+  width: 100%;
+
+}
+
+header a h1 {
+  box-shadow: 0px 0px 33px 20px rgb(0 0 0 / 33%);
+  background: rgb(0 0 0 / 30%);
+}
+
 
 .topbanners {
   width: 15%;
@@ -185,7 +198,34 @@ h2 {
     width: 100%;
   
 }
+
+.books {
+  width: 80%;
+  margin: auto;
   
+}
+
+.eachbook {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.bookcover {
+  width: 70%;
+  max-width: 420px;
+  display: block;
+  margin: auto;
+}
+ 
+@media only screen and (max-width: 768px) {
+  #animationsection, #booksection, #reviewsection {
+    margin-top: -30px;
+  }
+} 
+
+
+
 @media only screen and (min-width: 768px) {
   #aboutme {
     flex-wrap: nowrap;
@@ -208,7 +248,7 @@ h2 {
   .eachsection {
     min-height: 300px;
   }
-
+ 
   #head {
     font-size: 1.65em;
   }
